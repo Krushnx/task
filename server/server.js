@@ -20,6 +20,10 @@ app.use(express.json());
 
 const itemrouter = require('./routes/item')
 
+
+app.get("/", (req, res) => {
+    res.json("port to Mono");
+})
 app.use('/item' , itemrouter);
 
 
